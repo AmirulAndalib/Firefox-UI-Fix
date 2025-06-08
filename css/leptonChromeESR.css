@@ -379,7 +379,6 @@
       color: inherit !important; /* Original: -moz-menubarhovertext */
       background-color: color-mix(in srgb, currentColor 20%, transparent) !important; /* Original: -moz-menuhover */
     }
-    /*= Linux - Titlebar button at lwtheme =====================================*/
   }
   /*= Linux - Light System Default Theme's Selected Tab ========================*/
   @media (-moz-gtk-csd-available) and (-moz-toolbar-prefers-color-scheme: light),
@@ -13022,6 +13021,14 @@
       #context_openANewTab.tabmix-newtab-menu-icon {
         background-position: left var(--context-menu-background-padding) center !important;
         padding-inline-start: 0 !important;
+      }
+    }
+    @media (-moz-os-version: windows-win7),
+      (-moz-os-version: windows-win8),
+      (-moz-os-version: windows-win10),
+      (-moz-platform: windows) {
+      #main-menubar > menu > :is(.menubar-text, .menu-text) {
+        padding-inline-start: 3px !important;
       }
     }
     /* Padding - Linux */

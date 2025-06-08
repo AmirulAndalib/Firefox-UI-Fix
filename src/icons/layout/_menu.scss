@@ -108,6 +108,9 @@ $_layoutCommonMenus: (
   @include _layoutIconMenus {
     @include _layout_init_win();
   }
+  #{$_globalMenus} > :is(.menubar-text, .menu-text) {
+    padding-inline-start: 3px !important;
+  }
 }
 
 /* Padding - Linux */
